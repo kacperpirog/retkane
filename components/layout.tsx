@@ -6,8 +6,8 @@ import Link from "next/link";
 import Nav from "./nav";
 import Slider from "./slider";
 
-const name = "[Your Name]";
-export const siteTitle = "Next.js Sample Website";
+const name = "Kacper Piróg";
+export const siteTitle = "Retkane";
 
 export default function Layout({
   children,
@@ -38,7 +38,7 @@ export default function Layout({
       <header className={styles.header}>
         {home ? (
           <>
-            <img
+            <Image
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}

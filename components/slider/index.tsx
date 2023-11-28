@@ -1,8 +1,4 @@
 import React from "react";
-import img1 from "../../ass/foto_1.jpg";
-import img2 from "../../ass/foto_2.jpg";
-import img3 from "../../ass/1170x450_zad_1.png";
-
 import styles from "./slider.module.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -49,11 +45,12 @@ const Slider = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <button onClick={handlePrevSlide}>Poprzedni</button>
       <button onClick={handleNextSlide}>Następny</button>
       <div>
         <Image
+          className={styles.img}
           src={slides[currentSlide].image}
           alt={slides[currentSlide].content}
         />

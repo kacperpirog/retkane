@@ -1,15 +1,14 @@
+import Image from "next/image";
 import React from "react";
+import styles from "./nav.module.css";
+import logo from "../../ass/logo/logo_WHITE.png";
 import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <div>
+    <div className={styles.nav}>
       <div>
-        <h5>
-          PORTFOLIO.
-          <br />
-          Kacper Piróg
-        </h5>
+        <Image src={logo} alt="logo" />
       </div>
       <div>
         <Link
