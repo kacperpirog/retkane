@@ -1,8 +1,11 @@
 import React from "react";
-import img1 from "../../ass/narzedzia-rzemieslnicze-na-stole.jpg";
-import img2 from "../../ass/widok-z-gory-tlo-miejsca-pracy-krawiec-z-tkaniny.jpg";
+import img1 from "../../ass/foto_1.jpg";
+import img2 from "../../ass/foto_2.jpg";
+import img3 from "../../ass/1170x450_zad_1.png";
+
 import styles from "./slider.module.css";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface Slide {
   id: number;
@@ -14,17 +17,17 @@ const slides: Slide[] = [
   {
     id: 1,
     content: "Miejsce 1",
-    image: "../../ass/foto_1.jpg",
+    image: require("../../ass/1170x450_zad_1.png"),
   },
   {
     id: 2,
     content: "Miejsce 2",
-    image: "../../ass/foto_2.jpg",
+    image: require("../../ass/foto_1.jpg"),
   },
   {
     id: 3,
     content: "Miejsce 3",
-    image: "../../ass/foto_2.jpg",
+    image: require("../../ass/foto_2.jpg"),
   },
 ];
 const Slider = () => {
@@ -50,7 +53,7 @@ const Slider = () => {
       <button onClick={handlePrevSlide}>Poprzedni</button>
       <button onClick={handleNextSlide}>Następny</button>
       <div>
-        <img
+        <Image
           src={slides[currentSlide].image}
           alt={slides[currentSlide].content}
         />
