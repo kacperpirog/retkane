@@ -36,18 +36,11 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, [currentSlide]);
 
-  const handleNextSlide = () => {
-    setCurrentSlide((currentSlide + 1) % slides.length);
+  const handleExtraSlide = (id: number) => {
+    setCurrentSlide(id - 1);
   };
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
-  };
-
   return (
     <div className={styles.container}>
-      <button onClick={handlePrevSlide}>Poprzedni</button>
-      <button onClick={handleNextSlide}>Następny</button>
       <div>
         <Image
           className={styles.img}
@@ -56,6 +49,12 @@ const Slider = () => {
         />
         <p>{slides[currentSlide].content}</p>
       </div>
+
+      {slides.map((slide) => (
+        <button key={slide.id} onClick={() => handleExtraSlide(slide.id)}>
+          {slide.id}
+        </button>
+      ))}
     </div>
   );
 };

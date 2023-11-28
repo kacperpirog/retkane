@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div className={styles.nav}>
       <div>
-        <Image src={logo} alt="logo" />
+        <Image width={300} src={logo} alt="logo" />
       </div>
       <div>
         <Link
