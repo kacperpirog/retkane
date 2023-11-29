@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./nav.module.css";
 import logo from "../../ass/logo/logo_WHITE.png";
 import { Link } from "react-scroll";
+import { useState } from "react";
 
 const Nav = () => {
   return (
@@ -51,8 +52,7 @@ const Nav = () => {
         >
           Kontakt
         </Link>
-
-        <button className={styles.button}>zadzwoń</button>
+        <></>
       </div>
     </div>
   );

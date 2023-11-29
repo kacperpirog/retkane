@@ -36,11 +36,12 @@ nav.scrolled {
 
 .button {
   color: #f0f0f0;
-  font-size: 18px;
+  cursor: pointer;
+
   font-family: "Inter", sans-serif;
   background: none;
   border-style: solid;
-  padding: 5px 40px 5px 40px;
+  padding: 5px 50px 5px 50px;
   border-color: #fff;
   border-radius: 5px;
 }
