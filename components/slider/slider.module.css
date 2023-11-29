@@ -1,7 +1,6 @@
 .container {
   width: 100%;
-  position: inherit;
-
+  position: relative;
   margin: 0;
   overflow: hidden;
 }
@@ -11,14 +10,36 @@
   object-fit: contain;
 }
 
-.p {
+.div_slider {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 24px;
-  font-weight: bold;
+  font-weight: medium;
+}
+
+.button_slider {
+  color: #f0f0f0;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  border-style: solid;
+  padding: 5px 40px 5px 40px;
+  background-color: #337a5b;
+  border-color: #337a5b;
+  border-radius: 5px;
+}
+
+.button_download {
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  background: none;
+  border-style: solid;
+  padding: 5px 40px 5px 40px;
+  border-color: #fff;
+  border-radius: 5px;
 }
 
 /* div#slider {

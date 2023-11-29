@@ -51,15 +51,8 @@ const Nav = () => {
         >
           Kontakt
         </Link>
-        <Link
-          to="zadzwoń"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <button className={styles.button}>zadzwoń</button>
-        </Link>
+
+        <button className={styles.button}>zadzwoń</button>
       </div>
     </div>
   );
