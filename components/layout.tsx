@@ -40,7 +40,7 @@ export default function Layout({
       </Head>
       <Nav />
       <Slider />
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         {home ? (
           <>
             <Image
@@ -78,7 +78,7 @@ export default function Layout({
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
