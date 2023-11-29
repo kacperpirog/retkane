@@ -5,6 +5,7 @@ import Image from "next/image";
 
 interface Slide {
   id: number;
+  numberPage: string;
   content: string;
   copy: string;
   image: string;
@@ -13,18 +14,21 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
+    numberPage: "01",
     content: "Miejsce 1",
     copy: "Lorem ipsum dolor sit amet, consectetur",
     image: require("../../ass/foto_1.png"),
   },
   {
     id: 2,
+    numberPage: "02",
     content: "Miejsce 2",
     copy: "Lorem ipsum dolor sit amet, consectetur",
     image: require("../../ass/foto_2.png"),
   },
   {
     id: 3,
+    numberPage: "03",
     content: "Miejsce 3",
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
     image: require("../../ass/foto_3.png"),
@@ -72,7 +76,7 @@ const Slider = () => {
               key={slide.id}
               onClick={() => handleExtraSlide(slide.id)}
             >
-              {slide.id}
+              {slide.numberPage}
             </button>
           ))}
         </div>

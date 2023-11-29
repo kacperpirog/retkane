@@ -5,6 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Nav from "./nav";
 import Slider from "./slider";
+import AboutMe from "./aboutMe";
 
 const name = "Kacper Piróg";
 export const siteTitle = "Retkane";
@@ -40,6 +41,7 @@ export default function Layout({
       </Head>
       <Nav />
       <Slider />
+      <AboutMe />
       {/* <header className={styles.header}>
         {home ? (
           <>
