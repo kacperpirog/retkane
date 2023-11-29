@@ -1,6 +1,8 @@
 .nav {
   display: flex;
   position: fixed;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   top: 0;
   left: 0;
@@ -9,6 +11,32 @@
 }
 
 .img {
-  margin: 0;
+  margin: 10px;
   object-fit: contain;
+}
+
+.link {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 5px 0;
+  margin: 0 30px;
+  text-decoration: none;
+  background: linear-gradient(to top, #fff, #fff) bottom/0 0.1em no-repeat;
+  transition: 1s background-size;
+}
+.link :hover {
+  background-size: 100% 0.1em;
+  cursor: pointer;
+}
+
+.button {
+  color: #f0f0f0;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  background: none;
+  border-style: solid;
+  padding: 5px 40px 5px 40px;
+  border-color: #fff;
+  border-radius: 5px;
 }

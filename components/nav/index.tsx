@@ -8,11 +8,12 @@ const Nav = () => {
   return (
     <div className={styles.nav}>
       <div>
-        <Image width={300} src={logo} alt="logo" />
+        <Image className={styles.img} width={300} src={logo} alt="logo" />
       </div>
-      <div>
+      <div className={styles.link}>
         <Link
           to="Home"
+          className={styles.link}
           activeClass="active"
           spy={true}
           smooth={true}
@@ -22,6 +23,7 @@ const Nav = () => {
         </Link>
         <Link
           to="O Mnie"
+          className={styles.link}
           activeClass="active"
           spy={true}
           smooth={true}
@@ -31,6 +33,7 @@ const Nav = () => {
         </Link>
         <Link
           to="Warsztaty"
+          className={styles.link}
           activeClass="active"
           spy={true}
           smooth={true}
@@ -40,6 +43,7 @@ const Nav = () => {
         </Link>
         <Link
           to="Kontakt"
+          className={styles.link}
           activeClass="active"
           spy={true}
           smooth={true}
@@ -54,7 +58,7 @@ const Nav = () => {
           smooth={true}
           duration={500}
         >
-          <button>zadzwoń</button>
+          <button className={styles.button}>zadzwoń</button>
         </Link>
       </div>
     </div>
