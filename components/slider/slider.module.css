@@ -2,16 +2,15 @@
   width: 100%;
   position: relative;
   margin: 0;
-  overflow: hidden;
-}
-
-.img {
-  margin: 0;
-  object-fit: contain;
 }
 
 .div_slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -22,7 +21,6 @@
 .button_slider {
   color: #f0f0f0;
   font-size: 14px;
-  font-style: normal;
   font-family: "Inter", sans-serif;
   border-style: solid;
   padding: 5px 40px 5px 40px;
@@ -40,6 +38,31 @@
   padding: 5px 40px 5px 40px;
   border-color: #fff;
   border-radius: 5px;
+}
+.div_pagination {
+  position: absolute;
+  top: 50%;
+  left: 98%;
+}
+.button_pagination {
+  display: flex;
+  flex-direction: column;
+  color: #f0f0f0;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  background: none;
+  border-style: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.button_index:hover {
+  color: #337a5b;
+  cursor: pointer;
+}
+.button_active_pagination {
+  color: #337a5b;
+  cursor: pointer;
 }
 
 /* div#slider {

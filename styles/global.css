@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 * {
@@ -16,5 +16,5 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: flex;
 }

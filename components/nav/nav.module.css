@@ -37,11 +37,17 @@ nav.scrolled {
 .button {
   color: #f0f0f0;
   cursor: pointer;
-
+  width: 10rem;
   font-family: "Inter", sans-serif;
   background: none;
   border-style: solid;
-  padding: 5px 50px 5px 50px;
+  padding: 5px 10px;
   border-color: #fff;
   border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #337a5b;
+  border-color: #337a5b;
+  transition: 2s background-color;
 }

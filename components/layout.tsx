@@ -18,8 +18,6 @@ export default function Layout({
 }) {
   return (
     <div className={styles.container}>
-      <Nav />
-      <Slider />
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -40,6 +38,8 @@ export default function Layout({
           rel="stylesheet"
         />
       </Head>
+      <Nav />
+      <Slider />
       <header className={styles.header}>
         {home ? (
           <>

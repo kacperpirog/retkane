@@ -36,7 +36,7 @@ const Slider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((currentSlide + 1) % slides.length);
-    }, 200000);
+    }, 20000);
     return () => clearInterval(interval);
   }, [currentSlide]);
 
@@ -51,18 +51,32 @@ const Slider = () => {
           alt={slides[currentSlide].content}
         />
         <div className={styles.div_slider}>
-          <h1>{slides[currentSlide].content}</h1>
-          <h3>{slides[currentSlide].copy}</h3>
-          <button className={styles.button_slider}>Lorem Ipsum</button>
-          <button className={styles.button_download}>pobierz </button>
+          <div>
+            <h1>{slides[currentSlide].content}</h1>
+            <h3>{slides[currentSlide].copy}</h3>
+          </div>
+          <div>
+            <button className={styles.button_slider}>Lorem Ipsum</button>
+            <button className={styles.button_download}>Lorem Ipsum</button>
+          </div>
+        </div>
+
+        <div className={styles.div_pagination}>
+          {slides.map((slide) => (
+            <button
+              className={`${styles.button_pagination} ${
+                slide.id === currentSlide + 1
+                  ? styles.button_active_pagination
+                  : ""
+              }`}
+              key={slide.id}
+              onClick={() => handleExtraSlide(slide.id)}
+            >
+              {slide.id}
+            </button>
+          ))}
         </div>
       </div>
-
-      {slides.map((slide) => (
-        <button key={slide.id} onClick={() => handleExtraSlide(slide.id)}>
-          {slide.id}
-        </button>
-      ))}
     </div>
   );
 };

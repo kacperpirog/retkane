@@ -6,6 +6,11 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 
 const Nav = () => {
+  const [clicked, setClicked] = useState(false);
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <div className={styles.nav}>
       <div>
@@ -52,7 +57,11 @@ const Nav = () => {
         >
           Kontakt
         </Link>
-        <></>
+        <>
+          <button className={styles.button} onClick={handleClick}>
+            {clicked ? "Zadzwoń" : "+ 48 888 888 888"}
+          </button>
+        </>
       </div>
     </div>
   );
