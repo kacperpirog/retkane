@@ -66,10 +66,12 @@ const AboutMe = () => {
             onClick={() => handleExtraButton(i.id)}
           >
             <Image
+              key={i.id}
               className={styles.imgAboutMe}
               src={i.image}
               alt={i.content}
             />
+
             <div>
               <h3>{i.content}</h3>
             </div>
