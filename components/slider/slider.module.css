@@ -17,7 +17,12 @@
   color: white;
   font-weight: medium;
 }
-
+.divCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .button_slider {
   color: #f0f0f0;
   font-size: 14px;
@@ -56,7 +61,7 @@
   cursor: pointer;
   text-decoration: underline;
 }
-.button_index:hover {
+.button_pagination:hover {
   color: #337a5b;
   cursor: pointer;
 }

@@ -55,7 +55,7 @@ const Slider = () => {
           alt={slides[currentSlide].content}
         />
         <div className={styles.div_slider}>
-          <div>
+          <div className={styles.divCopy}>
             <h1>{slides[currentSlide].content}</h1>
             <h3>{slides[currentSlide].copy}</h3>
           </div>

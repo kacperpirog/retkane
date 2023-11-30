@@ -3,62 +3,55 @@
   margin: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
-.div_slider {
+.topCopy {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: medium;
 }
 
-.button_slider {
-  color: #f0f0f0;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  border-style: solid;
-  padding: 5px 40px 5px 40px;
-  background-color: #337a5b;
-  border-color: #337a5b;
-  border-radius: 5px;
+.copyLeftTop {
+  width: 60%;
+  color: #337a5b;
+  font-size: 1.5rem;
+}
+.copyRightTop {
+  width: 60%;
+  color: #337a5b;
 }
 
-.button_download {
-  color: #f0f0f0;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  background: none;
-  border-style: solid;
-  padding: 5px 40px 5px 40px;
-  border-color: #fff;
-  border-radius: 5px;
-}
-.div_pagination {
-  position: absolute;
-  top: 50%;
-  left: 98%;
-}
-.button_pagination {
+.wrapper {
   display: flex;
-  flex-direction: column;
-  color: #f0f0f0;
-  font-size: 17px;
-  font-family: "Inter", sans-serif;
-  background: none;
-  border-style: none;
-  padding: 0.2rem;
-  cursor: pointer;
-  text-decoration: underline;
+  justify-content: space-around;
+  margin-top: 3rem;
 }
+.wrapperButton {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  color: #337a5b;
+  flex-direction: column;
+  background: transparent;
+  box-shadow: 9px 7px 34px -7px rgba(66, 68, 90, 1);
+  border-radius: 10px;
+  border: none;
+  padding: 30px;
+  width: 18rem;
+  height: 20rem;
+}
+.wrapperButton div {
+  margin: 0.5rem;
+}
+.wrapperButton h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.wrapperButtonPagination {
+  background: #337a5b;
+  color: #fff;
+}
+.imgAboutMe {
+  width: 5rem;
+}
+
 .button_index:hover {
   color: #337a5b;
   cursor: pointer;

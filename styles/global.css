@@ -1,8 +1,10 @@
-html,
+html {
+  font-family: "Inter", sans-serif;
+}
 body {
   padding: 0;
   margin: 0;
-  font-family: "Inter", sans-serif;
+
   line-height: 1.6;
   font-size: 18px;
 }
@@ -17,4 +19,54 @@ img {
   max-width: 100%;
   height: auto;
   display: flex;
+}
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+}
+
+link {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
 }
