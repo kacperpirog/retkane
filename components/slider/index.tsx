@@ -57,7 +57,7 @@ const Slider = () => {
         <div className={styles.div_slider}>
           <div className={styles.divCopy}>
             <h1>{slides[currentSlide].content}</h1>
-            <h3>{slides[currentSlide].copy}</h3>
+            <h4>{slides[currentSlide].copy}</h4>
           </div>
           <div>
             <button className={styles.button_slider}>Lorem Ipsum</button>

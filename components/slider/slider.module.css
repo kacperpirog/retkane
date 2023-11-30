@@ -20,8 +20,11 @@
 .divCopy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 60%;
+  text-align: center;
+}
+.divCopy h4 {
+  margin-bottom: 20px;
 }
 .button_slider {
   color: #f0f0f0;

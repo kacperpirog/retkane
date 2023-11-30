@@ -2,13 +2,13 @@ import React from "react";
 import styles from "./aboutMe.module.css";
 import { useState } from "react";
 import Image from "next/image";
-import utilStyles from "../../styles/utils.module.css";
 
 interface AboutMe {
   id: number;
   content: string;
   copy: string;
   image: string;
+  imageWhite: string;
 }
 
 const aboutMe: AboutMe[] = [
@@ -17,18 +17,21 @@ const aboutMe: AboutMe[] = [
     content: "Lorem ipsum",
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: require("../../ass/icons/wired-outline-1683-recycling.gif"),
+    imageWhite: require("../../ass/icons/wired-outline-27-globeWhite.gif"),
   },
   {
     id: 2,
     content: "Lorem ipsum",
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: require("../../ass/icons/wired-outline-186-puzzle.gif"),
+    imageWhite: require("../../ass/icons/wired-outline-186-puzzlewhite.gif"),
   },
   {
     id: 3,
     content: "Lorem ipsum",
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: require("../../ass/icons/wired-outline-27-globe.gif"),
+    imageWhite: require("../../ass/icons/wired-outline-186-puzzle.gif"),
   },
 ];
 
@@ -37,6 +40,7 @@ const AboutMe = () => {
   const handleExtraButton = (id: number) => {
     setCurrentButton(id - 1);
   };
+
   return (
     <div className={styles.container}>
       <div className={styles.topCopy}>

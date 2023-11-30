@@ -44,12 +44,16 @@
   font-weight: bold;
   font-size: 20px;
 }
+.wrapperButton:hover {
+  background: #337a5b;
+  color: #fff;
+}
 .wrapperButtonPagination {
   background: #337a5b;
   color: #fff;
 }
 .imgAboutMe {
-  width: 5rem;
+  width: 6rem;
 }
 
 .button_index:hover {
