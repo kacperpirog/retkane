@@ -17,41 +17,44 @@
   color: white;
   font-weight: medium;
 }
+
 .divCopy {
   display: flex;
   flex-direction: column;
   width: 60%;
   text-align: center;
 }
+
 .divCopy h4 {
   margin-bottom: 20px;
 }
-.button_slider {
-  color: #f0f0f0;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  border-style: solid;
-  padding: 5px 40px 5px 40px;
-  background-color: #337a5b;
-  border-color: #337a5b;
-  border-radius: 5px;
-}
 
+.button_slider,
 .button_download {
   color: #f0f0f0;
   font-size: 14px;
   font-family: "Inter", sans-serif;
-  background: none;
   border-style: solid;
   padding: 5px 40px 5px 40px;
-  border-color: #fff;
   border-radius: 5px;
 }
+
+.button_slider {
+  background-color: #337a5b;
+  border-color: #337a5b;
+}
+
+.button_download {
+  background: none;
+  border-color: #fff;
+}
+
 .div_pagination {
   position: absolute;
   top: 50%;
   left: 98%;
 }
+
 .button_pagination {
   display: flex;
   flex-direction: column;
@@ -64,11 +67,30 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
 .button_pagination:hover {
   color: #337a5b;
   cursor: pointer;
 }
+
 .button_active_pagination {
   color: #337a5b;
   cursor: pointer;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .div_slider {
+    width: 80%;
+  }
+
+  .divCopy {
+    width: 80%;
+  }
+
+  .button_slider,
+  .button_download {
+    width: 100%;
+  }
 }
