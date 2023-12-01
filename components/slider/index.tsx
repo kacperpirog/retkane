@@ -16,14 +16,14 @@ const slides: Slide[] = [
     id: 1,
     numberPage: "01",
     content: "Miejsce 1",
-    copy: "Lorem ipsum dolor sit amet, consectetur",
+    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
     image: require("../../ass/foto_1.png"),
   },
   {
     id: 2,
     numberPage: "02",
     content: "Miejsce 2",
-    copy: "Lorem ipsum dolor sit amet, consectetur",
+    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
     image: require("../../ass/foto_2.png"),
   },
   {
