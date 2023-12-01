@@ -1,0 +1,29 @@
+.workshopsConteiner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 3rem 0;
+  justify-content: space-between;
+}
+.workshopsConteiner h1 {
+  color: #337a5b;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.workshopsWrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+.workshop {
+  width: 20rem;
+  height: 22rem;
+}
+.workshopImage {
+  border-radius: 10px;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
