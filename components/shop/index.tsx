@@ -85,9 +85,9 @@ const Shop = () => {
         <h1>Lorem Ipsum</h1>
       </div>
       <div>
-        {shop.map((i) => (
-          <ul>
-            <li>
+        <ul>
+          {shop.map((i) => (
+            <li key={i.id}>
               <Image className={styles.shopImage} src={i.image} alt={i.title} />
               <h4>{i.title}</h4>
               <p>{i.priceFinal}</p>
@@ -97,8 +97,8 @@ const Shop = () => {
               </button>
               <p></p>
             </li>
-          </ul>
-        ))}
+          ))}
+        </ul>
       </div>
     </div>
   );
