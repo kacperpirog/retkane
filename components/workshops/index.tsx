@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./workshops.module.css";
-import calender from "../../ass/icons/icons8-calendar-50.png";
 
 interface Workshops {
   id: number;
