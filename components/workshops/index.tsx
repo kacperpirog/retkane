@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./workshops.module.css";
+import calender from "../../ass/icons/icons8-calendar-50.png";
 
 interface Workshops {
   id: number;
@@ -47,11 +48,15 @@ const Workshops = () => {
               src={i.image}
               alt={i.title}
             />
-            <h3>{i.title}</h3>
+            <h4>{i.title}</h4>
             <p>{i.copy}</p>
             <div>
               <h5>{i.date}</h5>
               <button>
+                <Image
+                  src={require("../../ass/icons/icons8-calendar-50.png")}
+                  alt={i.title}
+                />
                 <h5>Zapisz się </h5>
               </button>
             </div>

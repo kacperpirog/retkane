@@ -21,6 +21,21 @@
   width: 20rem;
   height: 22rem;
 }
+.workshop h4 {
+  color: #337a5b;
+
+  font-weight: bold;
+}
+.workshop p {
+  color: #337a5b;
+
+  font-weight: bold;
+}
+.workshop h5 {
+  color: #337a5b;
+
+  font-weight: bold;
+}
 .workshopImage {
   border-radius: 10px;
   width: 20rem;
