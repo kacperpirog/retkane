@@ -79,7 +79,29 @@ const shop: Shop[] = [
 ];
 
 const Shop = () => {
-  return <div>Shop</div>;
+  return (
+    <div className={styles.container}>
+      <div>
+        <h1>Lorem Ipsum</h1>
+      </div>
+      <div>
+        {shop.map((i) => (
+          <ul>
+            <li>
+              <Image className={styles.shopImage} src={i.image} alt={i.title} />
+              <h4>{i.title}</h4>
+              <p>{i.priceFinal}</p>
+              <p>{i.price}</p>
+              <button onClick={() => window.open(i.link, "_blank")}>
+                <h4>Kup Teraz</h4>
+              </button>
+              <p></p>
+            </li>
+          </ul>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Shop;

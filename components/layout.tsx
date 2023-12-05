@@ -7,6 +7,7 @@ import Nav from "./nav";
 import Slider from "./slider";
 import AboutMe from "./aboutMe";
 import Workshops from "./workshops";
+import Shop from "./shop";
 
 const name = "Kacper Piróg";
 export const siteTitle = "Retkane";
@@ -44,6 +45,7 @@ export default function Layout({
       <Slider />
       <AboutMe />
       <Workshops />
+      <Shop />
       {/* <header className={styles.header}>
         {home ? (
           <>
