@@ -21,24 +21,75 @@
   width: 20rem;
   height: 22rem;
 }
-.workshop h4 {
-  color: #337a5b;
-
-  font-weight: bold;
-}
-.workshop p {
-  color: #337a5b;
-
-  font-weight: bold;
-}
-.workshop h5 {
-  color: #337a5b;
-
-  font-weight: bold;
-}
 .workshopImage {
   border-radius: 10px;
   width: 20rem;
   height: 20rem;
   object-fit: cover;
+  margin: 1rem 0;
+}
+.workshop h4 {
+  margin: 1rem 0;
+  height: 3rem;
+  font-size: 1rem;
+  color: #337a5b;
+}
+.workshop p {
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+.workshop h5 {
+  margin: 1rem 0;
+  color: #337a5b;
+  font-weight: bold;
+}
+
+.workshopCalendar {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.workshopCalendarButton {
+  display: flex;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  align-items: center;
+}
+.workshopCalendarButton:hover {
+  color: #337a5b;
+}
+.workshopCalendarButton:focus {
+  display: flex;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  align-items: center;
+}
+.workshopCalendarImage {
+  height: 15px;
+  width: auto;
+}
+.leftWorkshop {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.leftWorkshop h5 {
+  margin: 0 0 0 0.5rem;
+  color: #737373;
+  font-weight: lighter;
+}
+.rightWorkshop {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.rightWorkshop h5 {
+  margin: 0 0.5rem 0 0;
+  font-weight: lighter;
 }

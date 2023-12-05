@@ -50,15 +50,26 @@ const Workshops = () => {
             />
             <h4>{i.title}</h4>
             <p>{i.copy}</p>
-            <div>
-              <h5>{i.date}</h5>
-              <button>
+            <div className={styles.workshopCalendar}>
+              <div className={styles.leftWorkshop}>
                 <Image
+                  className={styles.workshopCalendarImage}
                   src={require("../../ass/icons/icons8-calendar-50.png")}
                   alt={i.title}
                 />
-                <h5>Zapisz się </h5>
-              </button>
+                <h5>{i.date}</h5>
+              </div>
+
+              <div className={styles.rightWorkshop}>
+                <button className={styles.workshopCalendarButton}>
+                  <h5>Zapisz się </h5>
+                  <Image
+                    className={styles.workshopCalendarImage}
+                    src={require("../../ass/icons/arrow.png")}
+                    alt={i.title}
+                  />
+                </button>
+              </div>
             </div>
           </div>
         ))}
