@@ -43,11 +43,18 @@
   color: #337a5b;
   font-weight: bold;
 }
+.workshop h5:hover {
+  font-weight: bold;
+}
 
 .workshopCalendar {
   margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
+}
+.workshopCalendar p {
+  font-weight: lighter;
+  font-size: 0.8rem;
 }
 
 .workshopCalendarButton {
