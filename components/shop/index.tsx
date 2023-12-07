@@ -89,17 +89,20 @@ const Shop = () => {
           <ul>
             <li className={styles.shopItem} key={i.id}>
               <Image className={styles.shopImage} src={i.image} alt={i.title} />
-              <div>
-                <h4 className={styles.shopTitle}>{i.title}</h4>
+              <div className={styles.shopInfo}>
+                <div className={styles.shopTitle}>
+                  <h4>{i.title}</h4>
+                  <div className={styles.shopPrice}>
+                    <h5>{i.price}</h5>
+                    <h5>{i.priceFinal}</h5>
+                  </div>
+                </div>
                 <div>
-                  <h5>{i.priceFinal}</h5>
-                  <h5>{i.price}</h5>
+                  <button onClick={() => window.open(i.link, "_blank")}>
+                    <h4>Kup Teraz</h4>
+                  </button>
                 </div>
               </div>
-              <button onClick={() => window.open(i.link, "_blank")}>
-                <h4>Kup Teraz</h4>
-              </button>
-              <p></p>
             </li>
           </ul>
         ))}

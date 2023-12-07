@@ -29,10 +29,26 @@
 }
 .shopItem {
   margin: 0 0 0 1.8rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #337a5b;
+  border-radius: 10px;
 }
-
+.shopInfo {
+  display: flex;
+}
+.shopTitle {
+  display: flex;
+  flex-direction: column;
+}
 .shopTitle h4 {
   font-size: large;
   color: #337a5b;
   font-weight: bold;
+}
+.shopPrice {
+  display: flex;
+}
+
+.shopButton {
 }
