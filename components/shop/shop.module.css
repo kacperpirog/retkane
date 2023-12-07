@@ -42,15 +42,24 @@
   display: flex;
   flex-direction: column;
 }
-.shopTitle h4 {
-  font-size: large;
+.shopTitle h3 {
   color: #337a5b;
   font-weight: bold;
+  font-size: 1rem;
 }
 .shopPrice {
   display: flex;
 }
-
+.oldPrice {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  padding-right: 0.4rem;
+}
+.finalPrice {
+  color: #337a5b;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
 .shopButton {
   display: flex;
   justify-content: center;

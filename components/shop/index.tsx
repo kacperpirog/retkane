@@ -91,10 +91,10 @@ const Shop = () => {
               <Image className={styles.shopImage} src={i.image} alt={i.title} />
               <div className={styles.shopInfo}>
                 <div className={styles.shopTitle}>
-                  <h4>{i.title}</h4>
+                  <h3>{i.title}</h3>
                   <div className={styles.shopPrice}>
-                    <h5>{i.price}</h5>
-                    <h5>{i.priceFinal}</h5>
+                    <h5 className={styles.oldPrice}>{i.price}</h5>
+                    <h5 className={styles.finalPrice}>{i.priceFinal}</h5>
                   </div>
                 </div>
                 <div className={styles.shopButton}>
