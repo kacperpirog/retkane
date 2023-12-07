@@ -17,26 +17,31 @@
 .shopImage {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
 }
 .shopList {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .shopItem {
-  margin: 0 0 0 1.8rem;
+  margin: 1rem 0 0 0.5rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid #337a5b;
+  border: transparent;
   border-radius: 10px;
+  background-color: #fcfcfc;
+
+  box-shadow: 9px 12px 24px -20px rgba(66, 68, 90, 1);
 }
 .shopInfo {
   display: flex;
   justify-content: space-around;
+  height: 6rem;
+  align-items: center;
 }
 .shopTitle {
   display: flex;
