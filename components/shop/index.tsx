@@ -97,8 +97,11 @@ const Shop = () => {
                     <h5>{i.priceFinal}</h5>
                   </div>
                 </div>
-                <div>
-                  <button onClick={() => window.open(i.link, "_blank")}>
+                <div className={styles.shopButton}>
+                  <button
+                    className={styles.buttoShop}
+                    onClick={() => window.open(i.link, "_blank")}
+                  >
                     <h4>Kup Teraz</h4>
                   </button>
                 </div>

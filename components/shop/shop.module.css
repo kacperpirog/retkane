@@ -36,6 +36,7 @@
 }
 .shopInfo {
   display: flex;
+  justify-content: space-around;
 }
 .shopTitle {
   display: flex;
@@ -51,4 +52,24 @@
 }
 
 .shopButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttoShop {
+  color: #f0f0f0;
+  cursor: pointer;
+  width: 6rem;
+  border-style: solid;
+  padding: 5px 10px;
+  border-color: #fff;
+  border-radius: 5px;
+  background-color: #337a5b;
+  border-color: #337a5b;
+}
+.buttoShop:hover {
+  background-color: #f0f0f0;
+  border-color: #337a5b;
+  color: #337a5b;
+  transition: 1s background-color;
 }
