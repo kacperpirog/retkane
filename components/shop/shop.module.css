@@ -7,10 +7,18 @@
   align-items: center;
 }
 
+.container h1 {
+  color: #337a5b;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .shopImage {
-  border-radius: 10px;
-  width: 20rem;
-  height: 20rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 15rem;
+  height: 15rem;
   object-fit: cover;
 }
 .shopList {
@@ -20,4 +28,11 @@
   flex-wrap: wrap;
 }
 .shopItem {
+  margin: 0 0 0 1.8rem;
+}
+
+.shopTitle h4 {
+  font-size: large;
+  color: #337a5b;
+  font-weight: bold;
 }
