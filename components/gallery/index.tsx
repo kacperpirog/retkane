@@ -32,12 +32,30 @@ const gallery: Gallery[] = [
   {
     id: 5,
     title: "gallery_05",
-    image: require("../../ass/gallery/gallery_05.png"),
+    image: require("../../ass/gallery/gallery_06.png"),
   },
 ];
 
 const Gallery = () => {
-  return <div>lorem</div>;
+  return (
+    <div className="gallery">
+      <Image
+        className="large-image"
+        src={gallery[0].image}
+        alt={gallery[0].title}
+      />
+      <div className="small-images">
+        {gallery.slice(1).map((gallery, index) => (
+          <Image
+            key={index}
+            className="small-image"
+            src={gallery.image}
+            alt={gallery.title}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Gallery;
