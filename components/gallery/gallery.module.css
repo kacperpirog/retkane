@@ -1,0 +1,31 @@
+.galleryConteiner {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.largeImage {
+  width: 500px;
+  height: auto;
+}
+
+.smallImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rowImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.smallImage {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+}
