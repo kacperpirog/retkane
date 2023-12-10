@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 import styles from "./gallery.module.css";
 
-type Gallery = {
+interface Gallery {
   id: number;
   title: string;
   image: string;
-};
+}
 
 const Gallery = () => {
   return <div>Gallery</div>;
