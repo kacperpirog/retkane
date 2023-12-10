@@ -1,35 +1,39 @@
 .galleryConteiner {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
-  margin: 3rem 0;
-  justify-content: space-between;
+  justify-content: center;
 }
-
 .galleryConteiner h1 {
   color: #337a5b;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
 .gallery {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 70%;
-  align-items: center;
-  justify-content: center;
 }
 
 .largeImage {
-  width: 40rem;
-  height: 40rem;
+  width: calc(100% / 3);
+  object-fit: cover;
+  margin: 0.5rem 0.5rem 0px 0px;
+  transition: transform 0.5s ease;
+}
+.largeImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .smallImages {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: calc(2 * 100% / 3);
 }
 
 .rowImage {
@@ -39,5 +43,14 @@
 }
 
 .smallImage {
-  margin: 10px;
+  width: calc(100% / 2);
+  height: 20rem;
+  object-fit: cover;
+  margin: 0.5rem 0.5rem 0px 0;
+  transition: transform 0.5s ease;
+}
+
+.smallImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
