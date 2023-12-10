@@ -39,31 +39,36 @@ const gallery: Gallery[] = [
 const Gallery = () => {
   return (
     <div className={styles.galleryConteiner}>
-      <Image
-        className={styles.largeImage}
-        src={gallery[0].image}
-        alt={gallery[0].title}
-      />
-      <div className={styles.smallImages}>
-        <div className={styles.rowImage}>
-          {gallery.slice(1, 3).map((image, index) => (
-            <Image
-              key={index}
-              className={styles.smallImage}
-              src={image.image}
-              alt={image.title}
-            />
-          ))}
-        </div>
-        <div className={styles.rowImage}>
-          {gallery.slice(3).map((image, index) => (
-            <Image
-              key={index}
-              className={styles.smallImage}
-              src={image.image}
-              alt={image.title}
-            />
-          ))}
+      <div>
+        <h1>Our Gallery View</h1>
+      </div>
+      <div className={styles.gallery}>
+        <Image
+          className={styles.largeImage}
+          src={gallery[0].image}
+          alt={gallery[0].title}
+        />
+        <div className={styles.smallImages}>
+          <div className={styles.rowImage}>
+            {gallery.slice(1, 3).map((image, index) => (
+              <Image
+                key={index}
+                className={styles.smallImage}
+                src={image.image}
+                alt={image.title}
+              />
+            ))}
+          </div>
+          <div className={styles.rowImage}>
+            {gallery.slice(3).map((image, index) => (
+              <Image
+                key={index}
+                className={styles.smallImage}
+                src={image.image}
+                alt={image.title}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
