@@ -1,0 +1,23 @@
+.containerInfo {
+  display: flex;
+  width: 90%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageInfo {
+  width: 50vw;
+  object-fit: cover;
+}
+.divInfo {
+  width: 50vw;
+}
+.wrapperInfo {
+  margin: 3rem 3rem 0 3rem;
+}
+
+.imageIcons {
+  width: 10rem;
+  margin-right: 0.5rem;
+}

@@ -25,17 +25,22 @@ const info: Info[] = [
 ];
 const Info = () => {
   return (
-    <div>
+    <div className={styles.containerInfo}>
       <div>
         <Image
           className={styles.imageInfo}
           src={require("../../ass/info/info_foto.jpg")}
-          alt="info "
+          alt="info"
         />
       </div>
-      <div>
-        <div></div>
-        <div></div>
+      <div className={styles.divInfo}>
+        {info.map((i) => (
+          <div key={i.id} className={styles.wrapperInfo}>
+            <Image className={styles.imageIcons} src={i.image} alt="info" />
+            <h4>{i.title}</h4>
+            <h5>{i.copy}</h5>
+          </div>
+        ))}
       </div>
     </div>
   );

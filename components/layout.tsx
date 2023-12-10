@@ -7,6 +7,7 @@ import AboutMe from "./aboutMe";
 import Workshops from "./workshops";
 import Shop from "./shop";
 import Gallery from "./gallery";
+import Info from "./info";
 
 const name = "Kacper Piróg";
 export const siteTitle = "Retkane";
@@ -45,6 +46,7 @@ export default function Layout({
       <AboutMe />
       <Workshops />
       <Shop />
+      <Info />
       <Gallery />
       {/* <header className={styles.header}>
         {home ? (
