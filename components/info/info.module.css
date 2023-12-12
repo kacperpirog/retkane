@@ -1,7 +1,7 @@
 .containerInfo {
   display: flex;
   width: 90%;
-
+  margin: 3rem 0 3rem 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -10,14 +10,22 @@
   width: 50vw;
   object-fit: cover;
 }
+
 .divInfo {
   width: 50vw;
+  padding: 0 0 0 0;
+}
+
+.divInfo :hover {
+  background: #337a5b;
+  color: white;
+  transition: 1s background-color;
 }
 .wrapperInfo {
-  margin: 3rem 3rem 0 3rem;
+  padding: 3rem 6rem 3rem 3rem;
 }
 
 .imageIcons {
-  width: 10rem;
-  margin-right: 0.5rem;
+  width: 7rem;
+  margin-right: 0.8rem;
 }

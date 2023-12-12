@@ -51,6 +51,7 @@ const Slider = () => {
     <div className={styles.container}>
       <div>
         <Image
+          className={styles.image_slider}
           src={slides[currentSlide].image}
           alt={slides[currentSlide].content}
         />
