@@ -8,6 +8,7 @@ import Workshops from "./workshops";
 import Shop from "./shop";
 import Gallery from "./gallery";
 import Info from "./info";
+import CommentWrapper from "./comment";
 
 const name = "Kacper Piróg";
 export const siteTitle = "Retkane";
@@ -48,6 +49,7 @@ export default function Layout({
       <Shop />
       <Info />
       <Gallery />
+      <CommentWrapper />
       {/* <header className={styles.header}>
         {home ? (
           <>
