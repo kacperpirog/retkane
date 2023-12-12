@@ -8,7 +8,7 @@ type Comment = {
   image: string;
 };
 
-const defaultImage = "ścieżka/do/domyślnego/zdjęcia.jpg";
+const defaultImage = "/ass/comment/foto.png";
 const CommentWrapper = () => {
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState<string>("");
