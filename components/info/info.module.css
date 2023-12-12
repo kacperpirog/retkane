@@ -16,11 +16,16 @@
   padding: 0 0 0 0;
 }
 
+.divInfo h4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
 .divInfo :hover {
   background: #337a5b;
-  color: white;
+  color: #fff;
   transition: 1s background-color;
 }
+
 .wrapperInfo {
   padding: 3rem 6rem 3rem 3rem;
 }
