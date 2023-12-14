@@ -8,8 +8,9 @@
   padding: 12rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-.container h2 {
+.container h1 {
   color: #ffffff;
 }
 .title {

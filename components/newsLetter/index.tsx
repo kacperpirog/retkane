@@ -6,9 +6,9 @@ const NewsLetter = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h2>
+        <h1>
           Lorem ipsum dolor sit amet, <br></br> consectetur adipiscing elit.
-        </h2>
+        </h1>
       </div>
       <div>
         <input type="email" placeholder="Wpisz swój e-mail"></input>
