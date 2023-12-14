@@ -1,9 +1,21 @@
 import Image from "next/image";
 import React from "react";
-import styles from "./gallery.module.css";
+import styles from "./newsLetter.module.css";
 
 const NewsLetter = () => {
-  return <div>NewsLetter</div>;
+  return (
+    <div className={styles.container}>
+      <div className={styles.title}>
+        <h2>
+          Lorem ipsum dolor sit amet, <br></br> consectetur adipiscing elit.
+        </h2>
+      </div>
+      <div>
+        <input type="email" placeholder="Wpisz swój e-mail"></input>
+        <button className={styles.btnNewsLetter}>Wyślij</button>
+      </div>
+    </div>
+  );
 };
 
 export default NewsLetter;
