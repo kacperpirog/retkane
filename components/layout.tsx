@@ -9,6 +9,7 @@ import Shop from "./shop";
 import Gallery from "./gallery";
 import Info from "./info";
 import CommentWrapper from "./comment";
+import NewsLetter from "./newsLetter";
 
 const name = "Kacper Piróg";
 export const siteTitle = "Retkane";
@@ -50,6 +51,7 @@ export default function Layout({
       <Info />
       <Gallery />
       <CommentWrapper />
+      <NewsLetter />
       {/* <header className={styles.header}>
         {home ? (
           <>
