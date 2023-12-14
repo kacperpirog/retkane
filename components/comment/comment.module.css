@@ -1,6 +1,10 @@
 .commentSection {
   padding: 20px;
   text-align: center;
+  color: #121212;
+}
+.commentSection h2 {
+  color: #337a5b;
 }
 
 .inputField,
@@ -42,22 +46,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
 .comment {
   background: #f8f8f8;
-
   padding: 20px;
   word-wrap: break-word;
   border-radius: 8px;
-  width: 20rem; /* Set a fixed width for each comment */
+  width: 20rem;
+  height: auto;
+  min-height: 20rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .commentHeader {
   display: flex;
   align-items: center;
   font-weight: lighter;
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
 }
 
 .comment h5 {
@@ -73,6 +81,7 @@
   border-radius: 50%;
   background: #fff;
   object-fit: cover;
+  margin-right: 15px;
 }
 
 .details {

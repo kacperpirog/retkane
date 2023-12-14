@@ -72,7 +72,7 @@ const CommentWrapper = () => {
         onChange={(e) => setNewCommentText(e.target.value)}
       />
       <div>
-        <select
+        {/* <select
           className={styles.selectImage}
           value={selectedImage}
           onChange={(e) => setSelectedImage(e.target.value)}
@@ -82,7 +82,7 @@ const CommentWrapper = () => {
               Wybierz obraz {index + 1}
             </option>
           ))}
-        </select>
+        </select> */}
       </div>
       <button className={styles.commentButton} onClick={handleAddComment}>
         Dodaj komentarz
