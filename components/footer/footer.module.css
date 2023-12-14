@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  background-image: url("../../ass/footer//footer.png");
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #000;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
