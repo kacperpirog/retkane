@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 import styles from "./layout.module.css";
 import Nav from "./nav";
 import Slider from "./slider";
