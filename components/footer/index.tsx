@@ -6,7 +6,23 @@ const Footer = () => {
   return (
     <>
       <div className={styles.containerFooter}>
-        <div></div>
+        <div>
+          <Image
+            className={styles.imageInfo}
+            src={require("../../ass/info/info_foto.jpg")}
+            alt="info"
+          />
+          <Image
+            className={styles.imageInfo}
+            src={require("../../ass/info/info_foto.jpg")}
+            alt="info"
+          />
+          <Image
+            className={styles.imageInfo}
+            src={require("../../ass/info/info_foto.jpg")}
+            alt="info"
+          />
+        </div>
       </div>
       <div className={styles.footer}>
         <p>Copyright &copy; {new Date().getFullYear()} Kacper Piróg</p>
