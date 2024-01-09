@@ -20,6 +20,15 @@
   object-fit: contain;
 }
 
+@media (max-width: 600px) {
+  .navItem {
+    display: none; /* or adjust as needed for small screens */
+  }
+  .navToggle {
+    display: block; /* show your toggle button */
+  }
+}
+
 .link {
   text-decoration: none;
   color: #f0f0f0;

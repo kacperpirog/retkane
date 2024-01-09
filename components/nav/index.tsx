@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./nav.module.css";
 import logo from "../../ass/logo/logo_WHITE.png";
 import { Link } from "react-scroll";
@@ -10,9 +10,22 @@ const Nav = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
+  const [navBackground, setNavBackground] = useState("transparent");
+
+  const handleScroll = () => {
+    const show = window.scrollY > 20;
+    setNavBackground(show ? "black" : "transparent");
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className={styles.nav}>
+    <div className={styles.nav} style={{ backgroundColor: navBackground }}>
       <div>
         <Image className={styles.img} width={300} src={logo} alt="logo" />
       </div>
