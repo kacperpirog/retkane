@@ -5,11 +5,48 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  padding: 12rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 6rem 0;
 }
+
+.divFooter {
+  padding: 1rem;
+}
+.wrapperFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.wrapperFooter h1 {
+  font-weight: lighter;
+}
+.wrapperFooterImageInfo {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.imageInfo {
+  width: 50px;
+  margin: 0 50px;
+}
+
+.linkFooter {
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 5px 0;
+  margin: 0 30px;
+  text-decoration: none;
+  background: linear-gradient(to top, #fff, #fff) bottom/0 0.1em no-repeat;
+  transition: 1s background-size;
+}
+.linkFooter :hover {
+  background-size: 100% 0.1em;
+  cursor: pointer;
+}
+
 .footer {
   display: flex;
   justify-content: center;
