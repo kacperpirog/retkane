@@ -61,19 +61,25 @@
 }
 
 @media (max-width: 768px) {
+  .nav {
+    justify-content: center;
+    align-items: baseline;
+    transition: background-color 1s ease;
+  }
   .menuIcon {
-    display: block; /* Pokazuje ikonę menu na urządzeniach mobilnych */
+    display: block;
   }
   .menuItems {
-    display: none; /* Domyślnie ukrywa elementy menu na urządzeniach mobilnych */
+    display: none;
   }
   .link {
     flex-direction: column;
+    align-items: center;
   }
   .menuItems.open {
     display: flex;
-    flex-direction: column; /* Wyświetla elementy menu w pionie */
-    /* Możesz dodać inne style, np. dla tła, paddingu itd. */
+    flex-direction: column;
+    transition: background-color 1s ease;
   }
   .img {
     display: none;

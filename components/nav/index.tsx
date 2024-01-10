@@ -29,9 +29,6 @@ const Nav = () => {
 
   return (
     <div className={styles.nav} style={{ backgroundColor: navBackground }}>
-      <div className={styles.menuIcon} onClick={toggleMenu}>
-        {isOpen ? "X" : "≡"}
-      </div>
       <div>
         <Image className={styles.img} width={300} src={logo} alt="logo" />
       </div>
@@ -83,6 +80,9 @@ const Nav = () => {
             </button>
           </>
         </div>
+      </div>
+      <div className={styles.menuIcon} onClick={toggleMenu}>
+        {isOpen ? "X" : "≡"}
       </div>
     </div>
   );
