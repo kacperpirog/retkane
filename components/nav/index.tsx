@@ -7,13 +7,13 @@ import { Link } from "react-scroll";
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [navBackground, setNavBackground] = useState("transparent");
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const handleClick = () => {
     setClicked(!clicked);
   };
-  const [navBackground, setNavBackground] = useState("transparent");
 
   const handleScroll = () => {
     const show = window.scrollY > 1;

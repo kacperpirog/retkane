@@ -32,7 +32,7 @@
 }
 
 .menuItems {
-  display: none; /* dla dużych ekranów */
+  display: flex; /* dla dużych ekranów */
 }
 .menuItems.open {
   display: block; /* dla urządzeń mobilnych */
