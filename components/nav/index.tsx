@@ -16,7 +16,7 @@ const Nav = () => {
   const [navBackground, setNavBackground] = useState("transparent");
 
   const handleScroll = () => {
-    const show = window.scrollY > 20;
+    const show = window.scrollY > 1;
     setNavBackground(show ? "black" : "transparent");
   };
 
