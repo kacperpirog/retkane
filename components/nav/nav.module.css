@@ -11,22 +11,10 @@
   background-color: transparent;
   transition: background-color 1s ease;
 }
-.navScrolled {
-  background-color: white;
-}
 
 .img {
   margin: 10px;
   object-fit: contain;
-}
-
-@media (max-width: 600px) {
-  .navItem {
-    display: none; /* or adjust as needed for small screens */
-  }
-  .navToggle {
-    display: block; /* show your toggle button */
-  }
 }
 
 .link {
@@ -41,6 +29,17 @@
 .link :hover {
   background-size: 100% 0.1em;
   cursor: pointer;
+}
+
+.menuItems {
+  display: none; /* dla dużych ekranów */
+}
+.menuItems.open {
+  display: block; /* dla urządzeń mobilnych */
+}
+.menuIcon {
+  display: none; /* domyślnie ukryty */
+  color: #fff;
 }
 
 .button {
@@ -59,4 +58,22 @@
   background-color: #337a5b;
   border-color: #337a5b;
   transition: 2s background-color;
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block; /* Pokazuje ikonę menu na urządzeniach mobilnych */
+    position: relative;
+  }
+  .menuItems {
+    display: none; /* Domyślnie ukrywa elementy menu na urządzeniach mobilnych */
+  }
+  .menuItems.open {
+    display: flex;
+    flex-direction: column; /* Wyświetla elementy menu w pionie */
+    /* Możesz dodać inne style, np. dla tła, paddingu itd. */
+  }
+  .img {
+    display: none;
+  }
 }
