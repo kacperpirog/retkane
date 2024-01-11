@@ -4,14 +4,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw; /* ensures full width */
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.backToHome {
-  margin: 3rem 0 0;
 }

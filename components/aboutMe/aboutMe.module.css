@@ -64,3 +64,22 @@
   color: #337a5b;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 2rem;
+  }
+  .wrapperButton {
+    margin: 1rem;
+  }
+  .topCopy,
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyLeftTop,
+  .copyRightTop {
+    width: 100%;
+  }
+}

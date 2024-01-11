@@ -56,3 +56,20 @@
   width: 100%;
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .containerFooter {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+  .divFooter {
+    padding: 0.5rem;
+  }
+  .wrapperFooter,
+  .wrapperFooterImageInfo {
+    flex-direction: column;
+  }
+  .imageInfo {
+    margin: 0.5rem;
+  }
+}

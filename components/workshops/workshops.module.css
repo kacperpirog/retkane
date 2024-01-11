@@ -100,3 +100,14 @@
   margin: 0 0.5rem 0 0;
   font-weight: lighter;
 }
+
+@media (max-width: 768px) {
+  .workshopsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .workshop {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
