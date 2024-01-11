@@ -29,3 +29,32 @@
   width: 7rem;
   margin-right: 0.8rem;
 }
+
+@media (max-width: 768px) {
+  .containerInfo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 3rem 0 3rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .imageInfo {
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .divInfo {
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+  }
+  .wrapperInfo {
+    padding: 0;
+  }
+  .workshop {
+    width: 100%;
+    margin: 1rem 0;
+    height: auto;
+  }
+}

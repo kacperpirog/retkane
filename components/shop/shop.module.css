@@ -86,3 +86,9 @@
   color: #337a5b;
   transition: 1s background-color;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
