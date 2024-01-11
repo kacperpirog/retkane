@@ -60,7 +60,7 @@ const Slider = () => {
             <h1>{slides[currentSlide].content}</h1>
             <h4>{slides[currentSlide].copy}</h4>
           </div>
-          <div>
+          <div className={styles.div_buttons}>
             <button className={styles.button_slider}>Lorem Ipsum</button>
             <button className={styles.button_download}>Lorem Ipsum</button>
           </div>
