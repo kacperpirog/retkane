@@ -14,22 +14,22 @@ interface AboutMe {
 const aboutMe: AboutMe[] = [
   {
     id: 1,
-    content: "Lorem ipsum",
-    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    content: "UPCYCLING",
+    copy: "Retkane to marka z pasją do upcyklingu. Przekształcamy zapomniane przedmioty w stylowe akcesoria, promując kreatywność i zrównoważony styl życia.",
     image: require("../../ass/icons/wired-outline-1683-recycling.gif"),
     imageWhite: require("../../ass/icons/wired-outline-27-globeWhite.gif"),
   },
   {
     id: 2,
-    content: "Lorem ipsum",
-    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    content: "REDUKCJA",
+    copy: "Tworzymy akcesoria z materiałów z drugiej ręki, redukując odpady i nadając nowe życie tym, co skończyłoby na śmietniku.",
     image: require("../../ass/icons/wired-outline-186-puzzle.gif"),
     imageWhite: require("../../ass/icons/wired-outline-186-puzzlewhite.gif"),
   },
   {
     id: 3,
-    content: "Lorem ipsum",
-    copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    content: "OCHRONA PLANETY",
+    copy: "Chronimy planetę, zamykając cykl życia materiałów w upcyclingowych akcesoriach, unikając marnowania i ograniczając ilość odpadów.",
     image: require("../../ass/icons/wired-outline-27-globe.gif"),
     imageWhite: require("../../ass/icons/wired-outline-186-puzzle.gif"),
   },
