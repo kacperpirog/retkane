@@ -7,7 +7,7 @@
 }
 
 .imageInfo {
-  width: 50vw;
+  width: 35vw;
   object-fit: cover;
 }
 
@@ -22,7 +22,8 @@
 }
 
 .wrapperInfo {
-  padding: 3rem 6rem 3rem 3rem;
+  padding: 3rem 13rem 3rem 3rem;
+  text-align: justify;
 }
 
 .imageIcons {
