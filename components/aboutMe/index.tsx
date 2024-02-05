@@ -45,14 +45,12 @@ const AboutMe = () => {
     <div className={styles.container}>
       <div className={styles.topCopy}>
         <div className={styles.copyLeftTop}>
-          <h2>Ekolorgia loren ipsum</h2>
+          <h2>Ekologia</h2>
         </div>
         <div className={styles.copyRightTop}>
           <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea
+            Ekologia to serce Retkane. Dla nas to nie tylko trend, lecz
+            filozofia życia. Dbamy o planetę, tworząc zrównoważone akcesoria.
           </h4>
         </div>
       </div>

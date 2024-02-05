@@ -37,7 +37,7 @@ const Info = () => {
         {info.map((i) => (
           <div key={i.id} className={styles.wrapperInfo}>
             <Image className={styles.imageIcons} src={i.image} alt="info" />
-            <h4>{i.title}</h4>
+            <h4>{i.title}Bush</h4>
             <h5>{i.copy}</h5>
           </div>
         ))}
